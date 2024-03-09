@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0; 
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -142,6 +142,24 @@ iframe{
     color: whitesmoke !important;
     font-size: 20px;
 }
+
+.container{
+    padding-top: 10px;
+}
+
+.galeria article{
+    border: 5px solid black;
+}
+
+.galeria article img{
+    height: auto;
+    width: 100%;
+}
+
+/* .container{
+    margin-left: 400px;
+    margin-right: 400px;
+} */
 
 /* .navbar-nav li{
     margin-right: 30px;
