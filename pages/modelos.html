@@ -1,36 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5.1 inicia -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap 5.1 fin -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Modelos</title>
 </head>
+
 <body>
     <header>
-        <h1 class="titulo_principal">TESLA PERU</h1>
-        <nav class="barra_navegacion">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./historia.html">Historia</a></li>
-                <li><a href="./eventos.html">Eventos</a></li>
-                <li><a href="./modelos.html">Modelos</a></li>
-                <li><a href="./fsd.html">FSD</a></li>
-            </ul>
-        </nav>
+    <!-- Titulo principal inicia -->
+    <div class="main_title">
+        <h1><strong>TESLA PERU</strong></h1>
+    </div>
+    <!-- Titulo principal fin -->
+
+    <!-- Navbar inicia -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#"><img src="./media/logo rojo.png" alt="" height= "40px"></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex justify-content-center collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./historia.html">HISTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eventos.html">EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./modelos.html">MODELOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./fsd.html">FSD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar fin -->
     </header>
-    <main>
-        <h2 class="subtitulos">Modelos</h2>
-        <iframe width="1060" height="615" src="https://www.youtube.com/embed/pOOnrbXVmUU?si=-MWstwLG2pANz57A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <p id="columnas_modelos"><strong>Model S:</strong> Autonomía de 600 km, 2.1 s de 0 a 100km/h, velocidad máxima de 322 km/h</p>
-        <p id="columnas_modelos"><strong>Model X:</strong> Autonomía de 543 km, 2.6 s de 0 a 100km/h, velocidad máxima de 250 km/h</p>
-        <p id="columnas_modelos"><strong>Model 3:</strong> Autonomía de 629 km, 3.1 s de 0 a 100km/h, velocidad máxima de 210 km/h</p>
-        <p id="columnas_modelos"><strong>Model Y:</strong> Autonomía de 533 km, 3.1 s de 0 a 100km/h, velocidad máxima de 302 km/h</p>
-        <!-- <img id="fotos_modelos" src="../media/model s.jpeg" alt="Model S">
-        <img id="fotos_modelos" src="../media/Meet-Your-Tesla-Model-X.png" alt="Model X">
-        <img id="fotos_modelos" src="../media/model 3.jpeg" alt="Model 3">
-        <img id="fotos_modelos" src="../media/model y.jpg" alt="Model Y"> -->
+
+    <main>    
+        <div class="container left-align">
+            <h2><strong>Historia de los vehículos de Tesla</strong></h2>
+            <p class="texto_base2">Tesla inició su historia con el Roadster en 2012. Este fue un auto deportivo de alta velocidad pero también de alto precio. Años más tarde sacaron sus modelos de lujo con el sedan Model S y el SUV Model X. Luego lanzaron vehículos premium con el sedán Model 3 y el Model Y. Poco después se comenzaron las pruebas del Semi, el cual es diseñado para reemplazar a los camiones de carga de larga distancia. Finalmente en el 2023 se iniciaron las ventas del Cybertruck, un total cambio al molde tradicional de pickups. Actualmente está en desarrollo un modelo desconocido que se espera tendrá un precio de USD 25 mil y estará apuntado al mercado masivo.</p>
+        </div>
+        <!-- Galería inicia -->
+        <div class="container left-align">
+            <h2><strong>Modelos disponibles</strong></h2>
+            <div class="galeria container-fluid">
+                <div class="row">
+                    <article class="col-sm-6 col-md-3">
+                        <h3>Roadster</h3>
+                        <img src="../media/New-Tesla-Roadster-front-driving.avif" alt="evento1">
+                        <p class="texto_base2">Evento de bienvenida a los nuevos miembros. Será una evento familiar en el cual se realizará la presentación de los nuevos miembros del club a la comunidad Tesla. Habrá parrilla, juegos para niños y un concierto.</p>
+                    </article>
+                    <article class="col-sm-6 col-md-3">
+                        <h3>Model S</h3>
+                        <img src="../media/9cfe795f-3ae9-41cb-bd1f-b1d76cce7305_2023+Tesla+Model+S+side+static.avif" alt="evento1">
+                        <p class="texto_base2">Paseo en Teslas a Ica. Se realizará una caravana desde la ciudad de Lima hasta la ciudad de Ica, por la noche dormiremos en el hotel El Sol. Al día siguiente se realizará un evento en la nueva estación de supercargadores.</p>
+                    </article>
+                    <article class="col-sm-6 col-md-3">
+                        <h3>Model X</h3>
+                        <img src="../media/1031ea2e-561b-4d06-be70-ff7fd66e0f45_2023+Tesla+Model+X+rear+quarter+moving.avif" alt="evento1">
+                        <p class="texto_base2">Visualización grupal de la presentación del cybertruck vía streaming. El evento durará dos horas y luego habrá una parrillada apta para toda la familia.</p>
+                    </article>
+                    <article class="col-sm-6 col-md-3">
+                        <h3>Model 3</h3>
+                        <img src="../media/22d4d51e-70fc-4daf-b636-67d362a71849_2024+Tesla+Model+3+front+quarter+static.avif" alt="evento1">
+                        <p class="texto_base2">Conversatorio sobre la implementación de la red de supercargadores en Perú. Nos acompañarán abogados y funcionarios de la municipalidad de San Borja para recoger las inquietudes de la comunidad.</p>
+                    </article>
+                    <article class="col-sm-6 col-md-3">
+                        <h3>Model Y</h3>
+                        <img src="../media/c5d0354b-5945-40e7-9ed9-e680057d5806_2023+Tesla+Model+Y+front+quarter+moving.avif" alt="evento1">
+                        <p class="texto_base2">Excusión a Santa Eulalia. La partida será desde Surco a las 6am y el viaje tomará aproximadamente 3 horas. Se almorzará en Chaclacayo para luego terminar el viaje.</p>
+                    </article>
+                    <article class="col-sm-6 col-md-3">
+                        <h3>Semi</h3>
+                        <img src="../media/Tesla_Semi_5.avif" alt="evento1">
+                        <p class="texto_base2">Evento de bienvenida a los nuevos miembos. Será una evento familiar en el cual se realizará la presentación de los nuevos miembros del club a la comunidad Tesla. Habrá parrilla, juegos para niños y un concierto.</p>
+                    </article>
+                    <article class="col-sm-6 col-md-3">
+                        <h3>Cybertruck</h3>
+                        <img src="../media/New-Tesla-Cybertruck-driving-2.avif" alt="evento1">
+                        <p class="texto_base2">Evento de bienvenida a los nuevos miembos. Será una evento familiar en el cual se realizará la presentación de los nuevos miembros del club a la comunidad Tesla. Habrá parrilla, juegos para niños y un concierto.</p>
+                    </article>
+                    <article class="col-sm-6 col-md-3">
+                        <h3>Model 2</h3>
+                        <img src="../media/model2.avif" alt="evento1">
+                        <p class="texto_base2">Evento de bienvenida a los nuevos miembos. Será una evento familiar en el cual se realizará la presentación de los nuevos miembros del club a la comunidad Tesla. Habrá parrilla, juegos para niños y un concierto.</p>
+                    </article>
+                </div>
+            </div>            
+        </div>
+        <!-- Galería fin -->
     </main>
     <footer>
         <p>Todos los derechos reservados</p>
@@ -43,5 +118,12 @@
             </a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
 </html>
