@@ -241,4 +241,49 @@ h3 {
   background-image: url(../media/img6.jpg);
 }
 
+.contenedor_fsd {
+  width: 80%;
+  background-color: gainsboro;
+  min-height: 300px;
+  margin-bottom: 0px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.caja {
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  width: 800px;
+  min-width: 80px;
+}
+
+.caja1 {
+  background-color: #e91b1b;
+}
+
+.caja2 {
+  background-color: #ec3c3c;
+}
+
+.caja3 {
+  background-color: #ef5c5c;
+}
+
+.caja4 {
+  background-color: #f27d7d;
+}
+
+.caja5 {
+  background-color: #f59d9d;
+}
+
+.caja6 {
+  background-color: #f9bebe;
+}
+
 /*# sourceMappingURL=estilo.css.map */

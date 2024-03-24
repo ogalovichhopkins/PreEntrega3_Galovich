@@ -1,30 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5.1 inicia -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap 5.1 fin -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/estilo.css">
     <title>FSD</title>
 </head>
+
 <body>
     <header>
-        <h1 class="titulo_principal">TESLA PERU</h1>
-        <nav class="barra_navegacion">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./historia.html">Historia</a></li>
-                <li><a href="./eventos.html">Eventos</a></li>
-                <li><a href="./modelos.html">Modelos</a></li>
-                <li><a href="./fsd.html">FSD</a></li>
-            </ul>
-        </nav>
+    <!-- Titulo principal inicia -->
+    <div class="main_title">
+        <h1><strong>TESLA PERU</strong></h1>
+    </div>
+    <!-- Titulo principal fin -->
+
+    <!-- Navbar inicia -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#"><img src="./media/logo rojo.png" alt="" height= "40px"></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex justify-content-center collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./historia.html">HISTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eventos.html">EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./modelos.html">MODELOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./fsd.html">FSD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar fin -->
     </header>
-    <main>
-        <h2 class="subtitulos">Qué es FSD?</h2>
-        <p class="texto_base">FSD es el programa de conducción autónoma de Tesla. Previamente la empresa había desarrollado software(llamada Versión 11) que utilizaba reglas determinadas por programadores para lograr que el auto entienda el mundo y maneje por si solo. Si bien hubo avances prometedores, el producto no lograba replicar la conducta de un humano. Con el surjimiento de ChatGPT y las LLMs, Tesla decidió utilizar el mismo enfoque para su desarrollo de software(llamada Versión 12). Entregarle a las redes neuronales muchas horas de video de conductores humanos y que estas aprendan por repetición para luego identifcar situaciones similares en el futuro y tomar las decisiones correctas.</p>
-        <p class="texto_base"><strong>FSD V.11 comparación con FSD V.12</strong></p>
-        <iframe class="iframe_antiguo" width="560" height="315" src="https://www.youtube.com/embed/P28fTF8M98w?si=R5NJVtp4x7Teopng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <main>    
+        <div class="container left-align">
+            <h2><strong>Qué es FSD?</strong></h2>
+            <p class="texto_base2">FSD es el programa de conducción autónoma de Tesla. Previamente la empresa había desarrollado software(llamada Versión 11) que utilizaba reglas determinadas por programadores para lograr que el auto entienda el mundo y maneje por si solo. Si bien hubo avances prometedores, el producto no lograba replicar la conducta de un humano. Con el surjimiento de ChatGPT y las LLMs, Tesla decidió utilizar el mismo enfoque para su desarrollo de software(llamada Versión 12). Entregarle a las redes neuronales muchas horas de video de conductores humanos y que estas aprendan por repetición para luego identifcar situaciones similares en el futuro y tomar las decisiones correctas.</p>
+        </div>
+        <div class="container left-align">
+            <h2><strong>FSD V.11 comparación con FSD V.12</strong></h2>
+        </div>
+        <div class="contenedor_fsd">
+            <div class="caja caja1">Experiencia de manejo similar a la de humano, menos robótica</div>
+            <div class="caja caja2">Toma de decisiones mejorada.</div>
+            <div class="caja caja3">Mejor manejo de rompe muelles</div>
+            <div class="caja caja4">Las vacilaciones de la versión 11 han desaparecido</div>
+            <div class="caja caja5">La rigidez de la versión 11 han desparecido</div>
+            <div class="caja caja6">Muchas de las experiencias de manejo no presentaron falla</div>
+        </div>
     </main>
     <footer>
         <p>Todos los derechos reservados</p>
@@ -37,5 +80,12 @@
             </a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
 </html>
