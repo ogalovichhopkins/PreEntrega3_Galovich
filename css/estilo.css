@@ -194,4 +194,51 @@ h3 {
   color: black;
 }
 
+.galeria_fundadores {
+  min-height: 400px;
+  width: 100%;
+  background-color: gainsboro;
+  display: grid;
+  grid-template-columns: 23% 23% 23%;
+  grid-template-rows: repeat(2, 200px);
+  padding-bottom: 10px;
+}
+
+.item {
+  border: 2px solid black;
+  background-image: url(../media/img1.jpg);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.9s;
+}
+
+.item:hover {
+  background-size: 100%;
+}
+
+.item1 {
+  background-image: url(../media/img1.jpg);
+}
+
+.item2 {
+  background-image: url(../media/img2.jpg);
+}
+
+.item3 {
+  background-image: url(../media/img3.jpg);
+}
+
+.item4 {
+  background-image: url(../media/img4.jpg);
+}
+
+.item5 {
+  background-image: url(../media/img5.jpg);
+}
+
+.item6 {
+  background-image: url(../media/img6.jpg);
+}
+
 /*# sourceMappingURL=estilo.css.map */

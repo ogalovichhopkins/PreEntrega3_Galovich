@@ -200,3 +200,33 @@ h2{
 h3{
     color: $color_texto_main;
 }
+
+.galeria_fundadores{
+    min-height: 400px;
+    width: 100%;
+    background-color: $color_main;
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 23% 23% 23%;
+    grid-template-rows: repeat(2, 200px);
+    padding-bottom: 10px;
+}
+
+.item{
+    border: 2px solid black;
+    background-image: url(../media/img1.jpg);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.9s;
+}
+
+.item:hover{
+    background-size: 100%;
+}
+
+@for $i from 1 through 6 {
+    .item#{$i} {
+        background-image: url(../media/img#{$i}.jpg);
+    }
+}
